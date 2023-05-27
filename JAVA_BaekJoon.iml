@@ -3,7 +3,27 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/practice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BasicAlgorithm/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/BinarySearch/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/BruteForce/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/DP/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/DataStructure/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/Graph/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/Greedy/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/LCA/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/MST/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/Math/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/Prefix_Sum/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/Recursion/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/Simulation/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/String/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/Topology/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/Tree/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/Trie/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/Two_Pointer/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProblemSolving/Union_Find/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Test/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
