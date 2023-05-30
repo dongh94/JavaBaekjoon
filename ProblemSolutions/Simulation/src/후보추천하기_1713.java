@@ -1,10 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class 후보추천하기_1713 {
     static int N,K;
@@ -19,13 +16,53 @@ public class 후보추천하기_1713 {
         }
 
         int[] count = new int[K + 1];
-        Set<Integer> check = new HashSet<>();
+        int maxcount = 0;
+        int d = 1;
+        HashSet<Integer> hashSet = new HashSet<>();
 
         StringTokenizer st = new StringTokenizer(br.readLine());
-        for (int i = 0; i <= K; i++) {
-            count[i]++;
+        for (int i = 0; i < K; i++) {
+            int n = Integer.parseInt(st.nextToken());
+            count[n]++;
+            if (maxcount < N && !hashSet.contains(n)) {
+                maxcount++;
+                day[n] = d;
+                hashSet.add(n);
+            } else if (maxcount == N && !hashSet.contains(n)) {
+                int remove = 0;
+                int min_n = Integer.MAX_VALUE;
+                int min_d = Integer.MAX_VALUE;
 
+                for (Integer j : hashSet) {
+                    if (count[j] < min_n) {
+                        min_n = count[j];
+                        min_d = day[j];
+                        remove = j;
+                    } else if (count[j] == min_n) {
+                        if (day[j] < min_d) {
+                            min_d = day[j];
+                            remove = j;
+                        }
+                    }
+                }
+                hashSet.remove(remove);
+                count[remove] = 0;
+                day[remove] = Integer.MAX_VALUE;
+
+                hashSet.add(n);
+                day[n] = d;
+            }
+
+        d++;
         }
-//        Collections.sort();
+        StringBuilder sb = new StringBuilder();
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        arrayList.addAll(hashSet);
+        Collections.sort(arrayList);
+        for (Integer integer : arrayList) {
+            sb.append(integer + " ");
+        }
+
+        System.out.println(sb);
     }
 }
