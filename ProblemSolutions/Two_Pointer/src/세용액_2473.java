@@ -36,7 +36,9 @@ public class 세용액_2473 {
                 }
             }
         }
-        System.out.println(ans[0] + " " + ans[1] + " " + ans[2]);
+        for (int i = 0; i < 3; i++) {
+            System.out.print(ans[i] + " ");
+        }
 
         sc.close();
     }
